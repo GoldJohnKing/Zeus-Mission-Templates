@@ -6,3 +6,8 @@
 if (playerRespawnTicket isNotEqualTo 0) then {
 	[playerRespawnTicketSide, playerRespawnTicket] call BIS_fnc_respawnTickets;
 };
+
+// 设置AI技能，仅对编辑器放置的AI有效
+{
+	[_x] call custom_fnc_set_ai_skills;
+} forEach allUnits;

@@ -5,7 +5,6 @@ showFriendlyMarkerOnMap = true;
 allowPlayerRespawnBesideLeader = true;
 
 // 默认AI技能，取值范围为[0,1]，数值越大AI越强
-// 仅影响任务初始化完成后，通过代码或宙斯界面生成的AI，不影响在编辑器中放置的AI
 // 关于各项参数的说明，详见：https://community.bistudio.com/wiki/Arma_3:_AI_Skill
 custom_ai_skills = [
     1,      // general
