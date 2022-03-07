@@ -1,7 +1,5 @@
 // 客户端初始化逻辑，仅在客户端任务初始化时执行
 
-custom_fnc_parajump = compileScript ["scripts\parajump\parajump.sqf"]; // 跳伞功能 - 初始化
-
 [{!isNull player}, { // 等待玩家角色初始化完成
 
     ["InitializePlayer", [player]] call BIS_fnc_dynamicGroups; // 小队菜单 - 客户端
