@@ -1,0 +1,36 @@
+#include "define_missions.hpp" // 需要任务制作者设置的内容
+
+respawn = "BASE"; // 重生模式，"BASE"为在自定义位置重生
+respawnDialog = 1; // 是否显示重生界面，0为不显示，1为显示
+respawnTemplates[] = {"Counter", "MenuPosition", "Tickets", "Spectator"}; // 重生界面设置，"Counter"为显示重生计时器，"MenuPosition"为选择重生位置，"Tickets"为重生时扣除票数(需搭配BIS_fnc_respawnTickets使用)
+respawnOnStart = -1; // 首次进入游戏时不触发重生，-1-不重生且不执行重生脚本，0-不重生但执行重生脚本，1-重生且执行重生脚本
+disableChannels[] = {0, 2, 4}; // 禁用无用的通讯频道，0-全局，1-阵营，2-指挥，3-小队，4-载具，5-直接
+disabledAI = 1; // 禁止AI接管玩家选位
+saving = 0; // 强制禁止保存
+// enableDebugConsole[] = {"76561197996528042"}; // 调试窗口白名单
+briefing = 0; // 强制跳过开始简报
+debriefing = 1; // 强制显示结束简报
+
+// ACEX 击杀统计 - 开始
+class CfgDebriefingSections {
+    class acex_killTracker {
+        title = "击杀统计";
+        variable = "acex_killTracker_outputText";
+    };
+};
+// ACEX 击杀统计 - 结束
+
+// 跳伞功能 - 开始
+#include "scripts\parajump\ui_map_select.hpp"
+class RscTitles {
+    #include "scripts\parajump\ui_cutscene.hpp"
+};
+class CfgSounds {
+    sounds[] = {};
+    class parasound	{
+        name = "parasound";
+        sound[] = {"scripts\parajump\ui_sound.ogg", 1.0, 1};
+        titles[] = {};
+    };
+};
+// 跳伞功能 - 结束
