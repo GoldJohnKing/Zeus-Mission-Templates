@@ -10,6 +10,7 @@ saving = 0; // 强制禁止保存
 // enableDebugConsole[] = {"76561197996528042"}; // 调试窗口白名单
 briefing = 0; // 强制跳过开始简报
 debriefing = 1; // 强制显示结束简报
+zeusCompositionScriptLevel = 2;	// 是否允许宙斯摆放的Composition执行内置脚本，0-禁止任何脚本，1-仅允许修改属性，2-允许任何脚本
 
 // ACEX 击杀统计 - 开始
 class CfgDebriefingSections {
