@@ -19,4 +19,7 @@
         [] execVM "scripts\QS_icons.sqf";
     };
 
+    // 耳塞
+    [] execVM "scripts\earplugs.sqf";
+
 }] call CBA_fnc_waitUntilAndExecute;
