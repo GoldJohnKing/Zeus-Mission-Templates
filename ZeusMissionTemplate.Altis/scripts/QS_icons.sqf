@@ -115,7 +115,7 @@ _QS_ST_showMedicalWounded = TRUE;								// BOOL. TRUE to show wounded on the ma
 // 	//'FAR'														// Farooq's Revive.
 // 	//'AWS'    													// A3 Wounding System by Psycho.
 // ];
-if (isClass(configFile >> "CfgPatches" >> "ace_main")) then { // Auto Detect ACE
+if (isClass(configFile >> "CfgPatches" >> "ace_medical_engine")) then { // Auto Detect ACE Medical
 	_QS_ST_MedicalSystem = ['ACE'];
 } else {
 	_QS_ST_MedicalSystem = ['BIS'];
