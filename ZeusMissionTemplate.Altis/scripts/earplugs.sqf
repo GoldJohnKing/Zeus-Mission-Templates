@@ -49,4 +49,11 @@ earplugs_add_actions =
 
 [] call earplugs_add_actions;
 
-player addEventHandler ["Respawn", {[_this] call earplugs_add_actions}];
+player addEventHandler ["Respawn", {
+	[] call earplugs_add_actions;
+	if (earplugs_activated) then {
+		[] call earplugs_insert;
+	} else {
+		[] call earplugs_takeout;
+	};
+}];
