@@ -22,7 +22,7 @@
     // 耳塞
     [] execVM "scripts\earplugs.sqf";
 
-    // 体力
+    // 无限体力
     if (noPlayerStamina) then {
         player enableStamina false;
     };

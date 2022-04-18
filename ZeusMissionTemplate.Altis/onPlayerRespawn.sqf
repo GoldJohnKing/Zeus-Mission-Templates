@@ -6,3 +6,8 @@ player setUnitLoadout (configFile >> "EmptyLoadout"); // 清空当前装备
 player setUnitLoadout (player getVariable ["Saved_Loadout", []]); // 重生时保持装备
 
 _oldUnit connectTerminalToUAV objNull; // 断开阵亡单位与无人机的连接
+
+// 无限体力
+if (noPlayerStamina) then {
+    player enableStamina false;
+};
