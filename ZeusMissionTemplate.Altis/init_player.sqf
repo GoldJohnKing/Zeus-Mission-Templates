@@ -22,4 +22,9 @@
     // 耳塞
     [] execVM "scripts\earplugs.sqf";
 
+    // 体力
+    if (noPlayerStamina) then {
+        player enableStamina false;
+    };
+
 }] call CBA_fnc_waitUntilAndExecute;

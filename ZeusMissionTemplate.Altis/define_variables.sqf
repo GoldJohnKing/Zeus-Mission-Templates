@@ -1,8 +1,11 @@
 // 在地图上显示玩家图标，true-开启，false-关闭
 showFriendlyMarkerOnMap = true;
 
-// 允许玩家在小队长附近重生，true-开启，开启，false-关闭
+// 允许玩家在小队长附近重生，true-开启，false-关闭
 allowPlayerRespawnBesideLeader = true;
+
+// 是否开启无限体力，仅对原版体力系统生效，true-无限体力，false-默认
+noPlayerStamina = true;
 
 // 默认AI技能，取值范围为[0,1]，数值越大AI越强
 // 关于各项参数的说明，详见：https://community.bistudio.com/wiki/Arma_3:_AI_Skill
