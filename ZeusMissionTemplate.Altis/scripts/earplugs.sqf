@@ -5,17 +5,15 @@ earplugs_activated = false;
 earplugs_insert =
 {
     1 fadeSound 0.3;
-    systemChat "已戴上耳塞";
+    "已戴上耳塞" call CBA_fnc_notify;
     earplugs_activated = true;
-    player say "FD_Timer_F";
 };
 
 earplugs_takeout =
 {
     1 fadeSound 1;
-    systemChat "已取下耳塞";
+    "已取下耳塞" call CBA_fnc_notify;
     earplugs_activated = false;
-    player say "FD_Timer_F";
 };
 
 earplugs_add_actions =
