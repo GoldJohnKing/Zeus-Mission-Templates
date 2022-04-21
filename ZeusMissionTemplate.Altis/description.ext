@@ -34,3 +34,15 @@ class CfgSounds {
     };
 };
 // 跳伞功能 - 结束
+
+// 始终允许远程执行 - 开始
+class CfgRemoteExec {
+	class Functions {
+		mode = 2;
+		jip = 1;
+	};
+	class Commands {
+		mode = 1;
+	};
+};
+// 始终允许远程执行 - 结束
