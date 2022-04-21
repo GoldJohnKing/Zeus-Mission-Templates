@@ -4,7 +4,7 @@ showFriendlyMarkerOnMap = true;
 // 允许玩家在小队长附近重生，true-开启，false-关闭
 allowPlayerRespawnBesideLeader = true;
 
-// 是否开启无限体力，仅对原版体力系统生效，true-无限体力，false-默认
+// 是否开启无限体力，true-无限体力，false-默认
 noPlayerStamina = true;
 
 // 默认AI技能，取值范围为[0,1]，数值越大AI越强

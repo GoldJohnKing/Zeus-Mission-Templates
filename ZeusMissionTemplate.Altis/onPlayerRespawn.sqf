@@ -13,4 +13,4 @@ if (noPlayerStamina) then {
 };
 
 // 禁用玩家角色的自动语音状态报告
-[player, "NoVoice"] remoteExec ["setSpeaker", -2, "NO_PLAYER_VOICE_REPORT"];
+[player, "NoVoice"] remoteExec ["setSpeaker", 0, "NO_PLAYER_VOICE_REPORT"];

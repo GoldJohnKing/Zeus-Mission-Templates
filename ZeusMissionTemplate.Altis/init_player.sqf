@@ -27,7 +27,21 @@
         player enableStamina false;
     };
 
-    // 禁用玩家角色的自动语音状态报告
-    [player, "NoVoice"] remoteExec ["setSpeaker", -2, "NO_PLAYER_VOICE_REPORT"];
+    // 禁用玩家角色的自动语音状态报告 - 开始
+    // 注意：宙斯通过军火库编辑某个角色的装备时，该角色的语音不会被禁用
+    [player, "NoVoice"] remoteExec ["setSpeaker", 0, "NO_PLAYER_VOICE_REPORT"];
+
+    // 玩家关闭 BI 军火库时触发此逻辑
+    [missionNamespace, "arsenalClosed", {
+        [player, "NoVoice"] remoteExec ["setSpeaker", 0, "NO_PLAYER_VOICE_REPORT"];
+    }] call BIS_fnc_addScriptedEventHandler;
+
+    // 若 ACE 军火库模组存在，则玩家关闭 ACE 军火库时触发此逻辑
+    if (isClass(configFile >> "CfgPatches" >> "ace_arsenal")) then {
+        ["ace_arsenal_displayClosed", {
+            [player, "NoVoice"] remoteExec ["setSpeaker", 0, "NO_PLAYER_VOICE_REPORT"];
+        }] call CBA_fnc_addEventHandler;
+    };
+    // 禁用玩家角色的自动语音状态报告 - 结束
 
 }] call CBA_fnc_waitUntilAndExecute;
