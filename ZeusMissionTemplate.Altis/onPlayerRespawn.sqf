@@ -11,3 +11,6 @@ _oldUnit connectTerminalToUAV objNull; // 断开阵亡单位与无人机的连�
 if (noPlayerStamina) then {
     player enableStamina false;
 };
+
+// 禁用玩家角色的自动语音状态报告
+[player, "NoVoice"] remoteExec ["setSpeaker", -2, "NO_PLAYER_VOICE_REPORT"];
