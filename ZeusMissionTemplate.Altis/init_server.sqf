@@ -11,3 +11,6 @@ if (playerRespawnTicket isNotEqualTo 0) then {
 {
 	[_x] call custom_fnc_set_ai_skills;
 } forEach allUnits;
+
+// 简单物件转换
+[] call compileScript ["scripts\ConvertSimpleObjects.sqf"];
