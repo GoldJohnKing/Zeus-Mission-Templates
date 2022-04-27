@@ -11,16 +11,16 @@
 
     // 重生至小队长
     if (allowPlayerRespawnBesideLeader) then {
-        [15,25] execVM "scripts\respawnBesideLeader.sqf";
+        [15, 25] call compileScript ["scripts\respawnBesideLeader.sqf"];
     };
 
     // 在地图上显示玩家图标
     if (showFriendlyMarkerOnMap) then {
-        [] execVM "scripts\QS_icons.sqf";
+        [] call compileScript ["scripts\QS_icons.sqf"];
     };
 
     // 耳塞
-    [] execVM "scripts\earplugs.sqf";
+    [] call compileScript ["scripts\earplugs.sqf"];
 
     // 无限体力
     if (noPlayerStamina) then {
