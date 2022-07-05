@@ -1,5 +1,7 @@
 private _objects = (getMissionLayerEntities "Simple Objects") select 0;
 
+if (isNil "_objects") exitWith {};
+
 {
     if (!isSimpleObject _x) then {
         private _path = getModelInfo _x select 1;
