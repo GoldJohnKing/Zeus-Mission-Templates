@@ -3,24 +3,7 @@ force force cba_disposable_dropUsedLauncher = 2;
 force force cba_disposable_replaceDisposableLauncher = true;
 force force cba_network_loadoutValidation = 0;
 
-// ACE夜视镜
-force force ace_nightvision_aimDownSightsBlur = 0;
-force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.1;
-force force ace_nightvision_fogScaling = 0;
-force force ace_nightvision_noiseScaling = 0.1;
-force force ace_nightvision_shutterEffects = true;
-
-// ACE虚拟军火库
-force force ace_arsenal_allowDefaultLoadouts = true;
-force force ace_arsenal_allowSharedLoadouts = true;
-force force ace_arsenal_camInverted = false;
-force force ace_arsenal_enableIdentityTabs = true;
-force force ace_arsenal_enableModIcons = true;
-force force ace_arsenal_EnableRPTLog = false;
-force force ace_arsenal_fontHeight = 4.5;
-
-// ACE 互动选单
+// ACE 互动菜单
 force force ace_gestures_showOnInteractionMenu = 2;
 force force ace_interact_menu_actionOnKeyRelease = true;
 force force ace_interact_menu_addBuildingActions = false;
@@ -36,8 +19,6 @@ force force ace_interact_menu_shadowSetting = 2;
 force force ace_interact_menu_textSize = 2;
 force force ace_interact_menu_useListMenu = false;
 force force ace_interact_menu_useListMenuSelf = false;
-
-// ACE 互动
 force force ace_interaction_disableNegativeRating = true;
 force force ace_interaction_enableGroupRenaming = true;
 force force ace_interaction_enableMagazinePassing = true;
@@ -45,43 +26,13 @@ force force ace_interaction_enableTeamManagement = true;
 force force ace_interaction_enableWeaponAttachments = true;
 force force ace_interaction_interactWithTerrainObjects = true;
 
-// ACE 使用者介面
-force force ace_ui_allowSelectiveUI = true;
-force force ace_ui_ammoCount = false;
-force force ace_ui_ammoType = true;
-force force ace_ui_commandMenu = true;
-force force ace_ui_enableSpeedIndicator = true;
-force force ace_ui_firingMode = true;
-force force ace_ui_groupBar = false;
-force force ace_ui_gunnerAmmoCount = true;
-force force ace_ui_gunnerAmmoType = true;
-force force ace_ui_gunnerFiringMode = true;
-force force ace_ui_gunnerLaunchableCount = true;
-force force ace_ui_gunnerLaunchableName = true;
-force force ace_ui_gunnerMagCount = true;
-force force ace_ui_gunnerWeaponLowerInfoBackground = true;
-force force ace_ui_gunnerWeaponName = true;
-force force ace_ui_gunnerWeaponNameBackground = true;
-force force ace_ui_gunnerZeroing = true;
-force force ace_ui_magCount = true;
-force force ace_ui_soldierVehicleWeaponInfo = true;
-force force ace_ui_staminaBar = true;
-force force ace_ui_stance = true;
-force force ace_ui_throwableCount = true;
-force force ace_ui_throwableName = true;
-force force ace_ui_vehicleAltitude = true;
-force force ace_ui_vehicleCompass = true;
-force force ace_ui_vehicleDamage = true;
-force force ace_ui_vehicleFuelBar = true;
-force force ace_ui_vehicleInfoBackground = true;
-force force ace_ui_vehicleName = true;
-force force ace_ui_vehicleNameBackground = true;
-force force ace_ui_vehicleRadar = true;
-force force ace_ui_vehicleSpeed = true;
-force force ace_ui_weaponLowerInfoBackground = true;
-force force ace_ui_weaponName = true;
-force force ace_ui_weaponNameBackground = true;
-force force ace_ui_zeroing = true;
+// ACE 人称限制
+force force acex_viewrestriction_mode = 3;
+force force acex_viewrestriction_modeSelectiveAir = 0;
+force force acex_viewrestriction_modeSelectiveFoot = 0;
+force force acex_viewrestriction_modeSelectiveLand = 0;
+force force acex_viewrestriction_modeSelectiveSea = 0;
+force force acex_viewrestriction_preserveView = true;
 
 // ACE 俘虏
 force force ace_captives_allowHandcuffOwnSide = false;
@@ -89,24 +40,7 @@ force force ace_captives_allowSurrender = true;
 force force ace_captives_requireSurrender = 2;
 force force ace_captives_requireSurrenderAi = false;
 
-// ACE 先进弹道系统
-force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
-force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
-force force ace_advanced_ballistics_bulletTraceEnabled = true;
-force force ace_advanced_ballistics_enabled = true;
-force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
-force force ace_advanced_ballistics_simulationInterval = 0.05;
-
-// ACE 切换单位
-force force ace_switchunits_enableSafeZone = true;
-force force ace_switchunits_enableSwitchUnits = false;
-force force ace_switchunits_safeZoneRadius = 100;
-force force ace_switchunits_switchToCivilian = false;
-force force ace_switchunits_switchToEast = false;
-force force ace_switchunits_switchToIndependent = false;
-force force ace_switchunits_switchToWest = false;
-
-// ACE 医疗系统
+// ACE 医疗
 force force ace_medical_ai_enabledFor = 2;
 force force ace_medical_AIDamageThreshold = 0.01;
 force force ace_medical_bleedingCoefficient = 0.5;
@@ -127,6 +61,7 @@ force force ace_medical_gui_enableSelfActions = true;
 force force ace_medical_gui_interactionMenuShowTriage = 1;
 force force ace_medical_gui_maxDistance = 5;
 force force ace_medical_gui_openAfterTreatment = true;
+force force ace_medical_gui_showBloodlossEntry = true;
 force force ace_medical_ivFlowRate = 2.5;
 force force ace_medical_limping = 1;
 force force ace_medical_painCoefficient = 0.8;
@@ -176,6 +111,15 @@ force force ace_medical_treatment_treatmentTimeTourniquet = 2.5;
 force force ace_medical_treatment_woundReopenChance = 1;
 force force ace_medical_treatment_woundStitchTime = 3;
 
+// ACE 单位切换
+force force ace_switchunits_enableSafeZone = true;
+force force ace_switchunits_enableSwitchUnits = false;
+force force ace_switchunits_safeZoneRadius = 100;
+force force ace_switchunits_switchToCivilian = false;
+force force ace_switchunits_switchToEast = false;
+force force ace_switchunits_switchToIndependent = false;
+force force ace_switchunits_switchToWest = false;
+
 // ACE 后勤设定
 force force ace_cargo_enable = true;
 force force ace_cargo_enableRename = true;
@@ -210,7 +154,7 @@ force force ace_hearing_enableCombatDeafness = true;
 force force ace_hearing_enabledForZeusUnits = false;
 force force ace_hearing_unconsciousnessVolume = 0.3;
 
-// ACE 地图标识器
+// ACE 地图指示
 force force ace_map_gestures_allowCurator = true;
 force force ace_map_gestures_allowSpectator = true;
 force force ace_map_gestures_briefingMode = 0;
@@ -239,10 +183,18 @@ force force ace_markers_timestampHourFormat = 24;
 // ACE 坐下功能
 force force acex_sitting_enable = true;
 
+// ACE 夜视仪
+force force ace_nightvision_aimDownSightsBlur = 0;
+force force ace_nightvision_disableNVGsWithSights = false;
+force force ace_nightvision_effectScaling = 0.1;
+force force ace_nightvision_fogScaling = 0;
+force force ace_nightvision_noiseScaling = 0.1;
+force force ace_nightvision_shutterEffects = true;
+
 // ACE 天气
 force force ace_weather_enabled = true;
 force force ace_weather_showCheckAirTemperature = true;
-force force ace_weather_updateInterval = 90;
+force force ace_weather_updateInterval = 30;
 force force ace_weather_windSimulation = true;
 
 // ACE 宙斯
@@ -263,23 +215,21 @@ force force ace_pylons_requireToolkit = true;
 force force ace_pylons_searchDistance = 25;
 force force ace_pylons_timePerPylon = 3;
 
-// ACE 干粮
-force force acex_field_rations_affectAdvancedFatigue = true;
-force force acex_field_rations_enabled = false;
-force force acex_field_rations_hudShowLevel = 0;
-force force acex_field_rations_hudTransparency = -1;
-force force acex_field_rations_hudType = 1;
-force force acex_field_rations_hungerSatiated = 1;
-force force acex_field_rations_terrainObjectActions = true;
-force force acex_field_rations_thirstQuenched = 1;
-force force acex_field_rations_timeWithoutFood = 2;
-force force acex_field_rations_timeWithoutWater = 2;
-force force acex_field_rations_waterSourceActions = 2;
+// ACE 弹道风偏
+force force ace_winddeflection_enabled = true;
+force force ace_winddeflection_simulationInterval = 0.05;
+force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE 快速搭乘
 force force ace_quickmount_distance = 5;
 force force ace_quickmount_enabled = true;
 force force ace_quickmount_speed = 25;
+
+// ACE 战壕
+force force ace_trenches_bigEnvelopeDigDuration = 25;
+force force ace_trenches_bigEnvelopeRemoveDuration = 15;
+force force ace_trenches_smallEnvelopeDigDuration = 15;
+force force ace_trenches_smallEnvelopeRemoveDuration = 10;
 
 // ACE 手榴弹
 force force ace_grenades_convertExplosives = true;
@@ -289,10 +239,15 @@ force force ace_goggles_effects = 2;
 force force ace_goggles_showClearGlasses = true;
 force force ace_goggles_showInThirdPerson = false;
 
-// ACE 指向标记器
+// ACE 拖曳
+force force ace_dragging_dragAndFire = false;
+
+// ACE 指向标记
 force force ace_finger_enabled = true;
 force force ace_finger_indicatorForSelf = true;
 force force ace_finger_maxRange = 50;
+force force ace_finger_proximityScaling = true;
+force force ace_finger_sizeCoef = 1;
 
 // ACE 旁观者
 force force ace_spectator_enableAI = true;
@@ -300,21 +255,24 @@ force force ace_spectator_maxFollowDistance = 25;
 force force ace_spectator_restrictModes = 0;
 force force ace_spectator_restrictVisions = 0;
 
-// ACE 无头客户端
-force force acex_headless_delay = 15;
-force force acex_headless_enabled = false;
-force force acex_headless_endMission = 0;
-force force acex_headless_log = false;
-force force acex_headless_transferLoadout = 1;
+// ACE 未分类
+force force ace_fastroping_requireRopeItems = true;
+force force ace_gunbag_swapGunbagEnabled = true;
+force force ace_hitreactions_minDamageToTrigger = 0.1;
+force force ace_inventory_inventoryDisplaySize = 2;
+force force ace_laser_dispersionCount = 2;
+force force ace_laser_showLaserOnMap = 3;
+force force ace_marker_flags_placeAnywhere = false;
+force force ace_microdagr_mapDataAvailable = 2;
+force force ace_microdagr_waypointPrecision = 3;
+force force ace_noradio_enabled = true;
+force force ace_optionsmenu_showNewsOnMainMenu = true;
+force force ace_overpressure_distanceCoefficient = 1;
+force force ace_parachute_failureChance = 0.01;
+force force ace_parachute_hideAltimeter = true;
+force force ace_tagging_quickTag = 0;
 
-// ACE 模拟碎片
-force force ace_frag_enabled = true;
-force force ace_frag_maxTrack = 10;
-force force ace_frag_maxTrackPerFrame = 10;
-force force ace_frag_reflectionsEnabled = true;
-force force ace_frag_spallEnabled = true;
-
-// ACE 武器按键
+// ACE 武器
 force force ace_common_persistentLaserEnabled = true;
 force force ace_laserpointer_enabled = true;
 force force ace_reload_displayText = true;
@@ -337,6 +295,12 @@ force force ace_mk6mortar_allowCompass = true;
 force force ace_mk6mortar_allowComputerRangefinder = true;
 force force ace_mk6mortar_useAmmoHandling = false;
 
+// ACE 火
+force force ace_fire_dropWeapon = 0;
+force force ace_fire_enabled = false;
+force force ace_fire_enableFlare = false;
+force force ace_fire_enableScreams = true;
+
 // ACE 炸药
 force force ace_explosives_customTimerDefault = 30;
 force force ace_explosives_customTimerMax = 900;
@@ -345,7 +309,7 @@ force force ace_explosives_explodeOnDefuse = true;
 force force ace_explosives_punishNonSpecialists = true;
 force force ace_explosives_requireSpecialist = false;
 
-// ACE 玩家名字
+// ACE 玩家名称
 force force ace_nametags_ambientBrightnessAffectViewDist = 1;
 force force ace_nametags_playerNamesMaxAlpha = 1;
 force force ace_nametags_playerNamesViewDistance = 50;
@@ -356,6 +320,51 @@ force force ace_nametags_showPlayerRanks = false;
 force force ace_nametags_showSoundWaves = 1;
 force force ace_nametags_showVehicleCrewInfo = true;
 force force ace_nametags_tagSize = 2;
+
+// ACE 班组支援武器
+force force ace_csw_ammoHandling = 2;
+force force ace_csw_defaultAssemblyMode = false;
+force force ace_csw_dragAfterDeploy = false;
+force force ace_csw_handleExtraMagazines = false;
+force force ace_csw_progressBarTimeCoefficent = 1;
+
+// ACE 用户界面
+force force ace_ui_allowSelectiveUI = true;
+force force ace_ui_ammoCount = false;
+force force ace_ui_ammoType = true;
+force force ace_ui_commandMenu = true;
+force force ace_ui_enableSpeedIndicator = true;
+force force ace_ui_firingMode = true;
+force force ace_ui_groupBar = false;
+force force ace_ui_gunnerAmmoCount = true;
+force force ace_ui_gunnerAmmoType = true;
+force force ace_ui_gunnerFiringMode = true;
+force force ace_ui_gunnerLaunchableCount = true;
+force force ace_ui_gunnerLaunchableName = true;
+force force ace_ui_gunnerMagCount = true;
+force force ace_ui_gunnerWeaponLowerInfoBackground = true;
+force force ace_ui_gunnerWeaponName = true;
+force force ace_ui_gunnerWeaponNameBackground = true;
+force force ace_ui_gunnerZeroing = true;
+force force ace_ui_magCount = true;
+force force ace_ui_soldierVehicleWeaponInfo = true;
+force force ace_ui_staminaBar = true;
+force force ace_ui_stance = true;
+force force ace_ui_throwableCount = true;
+force force ace_ui_throwableName = true;
+force force ace_ui_vehicleAltitude = true;
+force force ace_ui_vehicleCompass = true;
+force force ace_ui_vehicleDamage = true;
+force force ace_ui_vehicleFuelBar = true;
+force force ace_ui_vehicleInfoBackground = true;
+force force ace_ui_vehicleName = true;
+force force ace_ui_vehicleNameBackground = true;
+force force ace_ui_vehicleRadar = true;
+force force ace_ui_vehicleSpeed = true;
+force force ace_ui_weaponLowerInfoBackground = true;
+force force ace_ui_weaponName = true;
+force force ace_ui_weaponNameBackground = true;
+force force ace_ui_zeroing = true;
 
 // ACE 瞄准镜
 force force ace_scopes_correctZeroing = true;
@@ -370,13 +379,23 @@ force force ace_scopes_zeroReferenceBarometricPressure = 1013.25;
 force force ace_scopes_zeroReferenceHumidity = 0;
 force force ace_scopes_zeroReferenceTemperature = 15;
 
-// ACE 要塞
-force force ace_fortify_markObjectsOnMap = 1;
-force force ace_fortify_timeCostCoefficient = 1;
-force force ace_fortify_timeMin = 1.5;
-force force acex_fortify_settingHint = 2;
+// ACE 破片模拟
+force force ace_frag_enabled = true;
+force force ace_frag_maxTrack = 10;
+force force ace_frag_maxTrackPerFrame = 10;
+force force ace_frag_reflectionsEnabled = true;
+force force ace_frag_spallEnabled = true;
 
-// ACE 视野距离限制器
+// ACE 虚拟军火库
+force force ace_arsenal_allowDefaultLoadouts = true;
+force force ace_arsenal_allowSharedLoadouts = true;
+force force ace_arsenal_camInverted = false;
+force force ace_arsenal_enableIdentityTabs = true;
+force force ace_arsenal_enableModIcons = true;
+force force ace_arsenal_EnableRPTLog = false;
+force force ace_arsenal_fontHeight = 4.5;
+
+// ACE 视距限制器
 force force ace_viewdistance_enabled = false;
 force force ace_viewdistance_limitViewDistance = 8000;
 force force ace_viewdistance_objectViewDistanceCoeff = 5;
@@ -384,25 +403,24 @@ force force ace_viewdistance_viewDistanceAirVehicle = 8000;
 force force ace_viewdistance_viewDistanceLandVehicle = 3000;
 force force ace_viewdistance_viewDistanceOnFoot = 2500;
 
-// ACE 视野限制
-force force acex_viewrestriction_mode = 3;
-force force acex_viewrestriction_modeSelectiveAir = 0;
-force force acex_viewrestriction_modeSelectiveFoot = 0;
-force force acex_viewrestriction_modeSelectiveLand = 0;
-force force acex_viewrestriction_modeSelectiveSea = 0;
-force force acex_viewrestriction_preserveView = true;
+// ACE 设防
+force force ace_fortify_markObjectsOnMap = 1;
+force force ace_fortify_timeCostCoefficient = 1;
+force force ace_fortify_timeMin = 1.5;
+force force acex_fortify_settingHint = 2;
 
 // ACE 载具上锁
 force force ace_vehiclelock_defaultLockpickStrength = 15;
 force force ace_vehiclelock_lockVehicleInventory = true;
 force force ace_vehiclelock_vehicleStartingLockState = -1;
 
-// ACE 载具按键
+// ACE 载具
 force force ace_vehicles_keepEngineRunning = false;
 force force ace_vehicles_speedLimiterStep = 5;
 
 // ACE 过热
 force force ace_overheating_cookoffCoef = 3;
+force force ace_overheating_coolingCoef = 1;
 force force ace_overheating_displayTextOnJam = true;
 force force ace_overheating_enabled = true;
 force force ace_overheating_heatCoef = 0.75;
@@ -412,18 +430,12 @@ force force ace_overheating_overheatingRateOfFire = true;
 force force ace_overheating_particleEffectsAndDispersionDistance = 3000;
 force force ace_overheating_showParticleEffects = true;
 force force ace_overheating_showParticleEffectsForEveryone = true;
+force force ace_overheating_suppressorCoef = 1;
 force force ace_overheating_unJamFailChance = 0.1;
 force force ace_overheating_unJamOnreload = true;
 force force ace_overheating_unJamOnSwapBarrel = true;
 
-// ACE 进阶投掷
-force force ace_advanced_throwing_enabled = true;
-force force ace_advanced_throwing_enablePickUp = true;
-force force ace_advanced_throwing_enablePickUpAttached = true;
-force force ace_advanced_throwing_showMouseControls = true;
-force force ace_advanced_throwing_showThrowArc = true;
-
-// ACE 进阶疲劳
+// ACE 进阶体力
 force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = true;
 force force ace_advanced_fatigue_fadeStaminaBar = true;
@@ -433,19 +445,32 @@ force force ace_advanced_fatigue_recoveryFactor = 5;
 force force ace_advanced_fatigue_swayFactor = 0.3;
 force force ace_advanced_fatigue_terrainGradientFactor = 0.5;
 
-// ACE 通用按键
+// ACE 进阶弹道系统
+force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
+force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
+force force ace_advanced_ballistics_bulletTraceEnabled = true;
+force force ace_advanced_ballistics_enabled = true;
+force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
+force force ace_advanced_ballistics_simulationInterval = 0.05;
+
+// ACE 进阶投掷
+force force ace_advanced_throwing_enabled = true;
+force force ace_advanced_throwing_enablePickUp = true;
+force force ace_advanced_throwing_enablePickUpAttached = true;
+force force ace_advanced_throwing_showMouseControls = true;
+force force ace_advanced_throwing_showThrowArc = true;
+
+// ACE 通用
 force force ace_common_allowFadeMusic = true;
 force force ace_common_checkPBOsAction = 1;
 force force ace_common_checkPBOsCheckAll = false;
 force force ace_common_checkPBOsWhitelist = "[]";
+force force ace_common_progressBarInfo = 1;
 force ace_common_settingFeedbackIcons = 1;
 force ace_common_settingProgressBarLocation = 0;
-force force ace_noradio_enabled = true;
-
-// ACE 通用
-force force ace_common_progressBarInfo = 1;
 
 // ACE 重新整理弹匣
+force force ace_magazinerepack_repackAnimation = true;
 force force ace_magazinerepack_repackLoadedMagazines = true;
 force force ace_magazinerepack_timePerAmmo = 1.5;
 force force ace_magazinerepack_timePerBeltLink = 8;
@@ -455,6 +480,19 @@ force force ace_magazinerepack_timePerMagazine = 2;
 force force ace_respawn_removeDeadBodiesDisconnected = true;
 force force ace_respawn_savePreDeathGear = true;
 
+// ACE 野战军粮
+force force acex_field_rations_affectAdvancedFatigue = true;
+force force acex_field_rations_enabled = false;
+force force acex_field_rations_hudShowLevel = 0;
+force force acex_field_rations_hudTransparency = -1;
+force force acex_field_rations_hudType = 1;
+force force acex_field_rations_hungerSatiated = 1;
+force force acex_field_rations_terrainObjectActions = true;
+force force acex_field_rations_thirstQuenched = 1;
+force force acex_field_rations_timeWithoutFood = 2;
+force force acex_field_rations_timeWithoutWater = 2;
+force force acex_field_rations_waterSourceActions = 2;
+
 // ACE 音量
 force force acex_volume_enabled = false;
 force force acex_volume_fadeDelay = 1;
@@ -463,33 +501,16 @@ force force acex_volume_reduction = 5;
 force force acex_volume_remindIfLowered = false;
 force force acex_volume_showNotification = true;
 
-// ACE 风偏
-force force ace_winddeflection_enabled = true;
-force force ace_winddeflection_simulationInterval = 0.05;
-force force ace_winddeflection_vehicleEnabled = true;
-
-// ACE Advanced Vehicle Damage
+// ACE 高级载具损坏
 force force ace_vehicle_damage_enableCarDamage = true;
 force force ace_vehicle_damage_enabled = false;
 force force ace_vehicle_damage_removeAmmoDuringCookoff = true;
 
-// ACE Crew Served Weapons
-force force ace_csw_ammoHandling = 2;
-force force ace_csw_defaultAssemblyMode = false;
-force force ace_csw_dragAfterDeploy = false;
-force force ace_csw_handleExtraMagazines = false;
-force force ace_csw_progressBarTimeCoefficent = 1;
+// ACE Casings
+force force ace_casings_enabled = true;
+force force ace_casings_maxCasings = 500;
 
-// ACE Dragging
-force force ace_dragging_dragAndFire = false;
-
-// ACE Fire
-force force ace_fire_dropWeapon = 0;
-force force ace_fire_enabled = false;
-force force ace_fire_enableFlare = false;
-force force ace_fire_enableScreams = true;
-
-// ACE G-Forces
+// ACE G力
 force force ace_gforces_coef = 1;
 force force ace_gforces_enabledFor = 2;
 
@@ -517,66 +538,12 @@ force force grenades_hatches_main_knowledgeMultiplier = 5;
 force force grenades_hatches_main_whitelistVehiclesInheritanceSetting = "['LandVehicle','Air','Ship']";
 force force grenades_hatches_main_whitelistVehiclesSetting = "[]";
 
-// ACE Trenches
-force force ace_trenches_bigEnvelopeDigDuration = 25;
-force force ace_trenches_bigEnvelopeRemoveDuration = 15;
-force force ace_trenches_smallEnvelopeDigDuration = 15;
-force force ace_trenches_smallEnvelopeRemoveDuration = 10;
-
-// ACE Uncategorized
-force force ace_fastroping_requireRopeItems = true;
-force force ace_gunbag_swapGunbagEnabled = true;
-force force ace_hitreactions_minDamageToTrigger = 0.1;
-force force ace_inventory_inventoryDisplaySize = 2;
-force force ace_laser_dispersionCount = 2;
-force force ace_microdagr_mapDataAvailable = 2;
-force force ace_microdagr_waypointPrecision = 3;
-force force ace_optionsmenu_showNewsOnMainMenu = true;
-force force ace_overpressure_distanceCoefficient = 1;
-force force ace_parachute_failureChance = 0.01;
-force force ace_parachute_hideAltimeter = true;
-force force ace_tagging_quickTag = 0;
-
-// ACE Vehicle Medical
-force force MIRA_Vehicle_Medical_CacheInterval = 0.5;
-force force MIRA_Vehicle_Medical_EnableAVM = true;
-force force MIRA_Vehicle_Medical_EnableIncapacitated = true;
-force force MIRA_Vehicle_Medical_EnableStable = true;
-force force MIRA_Vehicle_Medical_EnableUnstable = true;
-force force MIRA_Vehicle_Medical_Incapacitated_CanUnloadAll = true;
-force force MIRA_Vehicle_Medical_Incapacitated_ShowCount = true;
-force force MIRA_Vehicle_Medical_Stable_ShowCount = true;
-force force MIRA_Vehicle_Medical_Stable_ThresholdLowBP = 80;
-force force MIRA_Vehicle_Medical_Stable_ThresholdLowHR = 50;
-force force MIRA_Vehicle_Medical_Stable_TrackFractures = true;
-force force MIRA_Vehicle_Medical_Stable_TrackIV = true;
-force force MIRA_Vehicle_Medical_Stable_TrackLowBP = true;
-force force MIRA_Vehicle_Medical_Stable_TrackLowHR = true;
-force force MIRA_Vehicle_Medical_Stable_TrackNeedsBandage = true;
-force force MIRA_Vehicle_Medical_Stable_TrackSplints = true;
-force force MIRA_Vehicle_Medical_Stable_TrackStitchableWounds = true;
-force force MIRA_Vehicle_Medical_Stable_TrackTourniquets = true;
-force force MIRA_Vehicle_Medical_Unstable_DogtagsDeadOnly = true;
-force force MIRA_Vehicle_Medical_Unstable_ShowCount = true;
-force force MIRA_Vehicle_Medical_Unstable_TakeDogtags = true;
-force force MIRA_Vehicle_Medical_Unstable_ThresholdLowBP = 80;
-force force MIRA_Vehicle_Medical_Unstable_ThresholdLowHR = 50;
-force force MIRA_Vehicle_Medical_Unstable_TrackBleeding = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackCardiacArrest = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackDead = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackIV = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackLegFractures = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackLegSplints = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackLowBP = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackLowHR = true;
-force force MIRA_Vehicle_Medical_Unstable_TrackUnconscious = true;
-force force MIRA_Vehicle_Medical_Vehicles_EnableCar = true;
-force force MIRA_Vehicle_Medical_Vehicles_EnableHelicopter = true;
-force force MIRA_Vehicle_Medical_Vehicles_EnablePlane = true;
-force force MIRA_Vehicle_Medical_Vehicles_EnableShip = true;
-force force MIRA_Vehicle_Medical_Vehicles_EnableTank = true;
-force force MIRA_Vehicle_Medical_VERSION = false;
-force force MIRA_Vehicle_Medical_WarnViewingDead = true;
+// ACE Headless 客户端
+force force acex_headless_delay = 15;
+force force acex_headless_enabled = false;
+force force acex_headless_endMission = 0;
+force force acex_headless_log = false;
+force force acex_headless_transferLoadout = 1;
 
 // Advanced Garbage Collector
 force force AGC_bodyType = "body";
@@ -603,6 +570,9 @@ force force PLANE_TURBULENCE_ENABLE_MASTER = false;
 force force PLANE_TURBULENCE_ENABLE_WEATHEREFFECT = true;
 force force PLANE_TURBULENCE_MAX_TURBULENCE = 10;
 force force PLANE_TURBULENCE_MIN_TURBULENCE = 2.5;
+
+// Ambient Arsenal Animations
+force force VKN_arsenal_animations = true;
 
 // Anti-Bounce System
 force force ABS_AssistUnflip = true;
@@ -658,6 +628,13 @@ force force BettIR_ViewDistance = 300;
 
 // Crows Electronic Warfare
 force force crowsEW_spectrum_spectrumEnable = true;
+
+// CUP
+force force CUP_CheckCfgPatches = false;
+
+// CUP Static Weapons
+force force CUP_staticWeapons_allowMovement = true;
+force force CUP_staticWeapons_allowRotation = true;
 
 // DUI - 小队雷达 - 主要
 force force diwako_dui_ace_hide_interaction = false;
@@ -748,10 +725,21 @@ force force diwako_dui_radar_syncGroup = true;
 force force diwako_dui_radar_vehicleCompassEnabled = false;
 force force diwako_dui_use_layout_editor = false;
 
+// Dynamic Camo System
+force force DYNCAS_enabled = true;
+force force DYNCAS_ghillieReduction = true;
+force force DYNCAS_lowerLimit = 0.6;
+force force DYNCAS_nightCompensation = true;
+force force DYNCAS_targetList = 2;
+force force DYNCAS_updateFrequency = 1;
+force force DYNCAS_upperLimit = 1.4;
+
 // Enhanced Movement Rework
 force force emr_main_allowMidairClimbing = true;
 force force emr_main_animSpeedCoef = 1;
 force force emr_main_animSpeedStaminaCoef = 0.4;
+force force emr_main_assistDuty = 1.5;
+force force emr_main_assistHeight = 1.5;
 force force emr_main_blacklistStr = "";
 force force emr_main_climbingEnabled = true;
 force force emr_main_climbOnDuty = 3.4;
@@ -762,6 +750,7 @@ force force emr_main_enableWalkableSurface = true;
 force force emr_main_enableWeightCheck = false;
 force force emr_main_hintType = 2;
 force force emr_main_jumpDuty = 1;
+force force emr_main_jumpForwardVelocity = 1.2;
 force force emr_main_jumpingEnabled = true;
 force force emr_main_jumpingLoadCoefficient = 1;
 force force emr_main_jumpVelocity = 3;
@@ -779,6 +768,7 @@ force force emr_main_whitelistStr = "";
 force force js_jc_fa18_advancedStart = false;
 force force js_jc_fa18_atflirRequire = false;
 force force js_jc_fa18_canopyLoss = true;
+force force js_jc_fa18_core_afterburnerArmedByDefault = true;
 force force js_jc_fa18_core_simpleMavericks = true;
 force force js_jc_fa18_core_tdcDepressRequiredForMove = false;
 force force js_jc_fa18_cursorSensitivity = 2.5;
@@ -902,21 +892,42 @@ force force simplesuppress_suppress_overlayTexture = 1;
 force force simplesuppress_suppress_projectileMaxDistance = 10;
 force force simplesuppress_suppress_shooterMinDistance = 0;
 
+// Simplex Support Services
+force force SSS_setting_adminFullAccess = true;
+force force SSS_setting_adminLimitSide = true;
+force force SSS_setting_cleanupCrew = true;
+force force SSS_setting_deleteVehicleOnEntityRemoval = true;
+force force SSS_setting_directActionRequirement = true;
+force force SSS_setting_GiveUAVTerminal = true;
+force force SSS_setting_milsimModeArtillery = false;
+force force SSS_setting_milsimModeCAS = false;
+force force SSS_setting_milsimModeLogistics = false;
+force force SSS_setting_milsimModeTransport = false;
+force force SSS_setting_removeSupportOnVehicleDeletion = true;
+force force SSS_setting_resetVehicleOnRTB = true;
+force force SSS_setting_restoreCrewOnRTB = true;
+force force SSS_setting_slingLoadSearchRadius = 99.7787;
+force force SSS_setting_slingLoadWhitelist = "";
+force force SSS_setting_useChatNotifications = false;
+
 // Tao's Folding Map Rewrite
 force force tao_rewrite_main_allowAdjust = 0;
-force force tao_rewrite_main_allowAdjustLocked = false;
-force force tao_rewrite_main_allowShake = false;
+force force tao_rewrite_main_allowPaperMapDarkening = false;
 force force tao_rewrite_main_closeMap = false;
 force force tao_rewrite_main_closeView = ["INTERNAL","EXTERNAL","GUNNER","GROUP"];
 force force tao_rewrite_main_enableMap = true;
-force force tao_rewrite_main_GPSAdjust = true;
+force force tao_rewrite_main_GPSAdjust = false;
 force force tao_rewrite_main_gridRef = true;
 force force tao_rewrite_main_isNightMap = false;
+force force tao_rewrite_main_itemsGPSSetting = "['ACE_DAGR','ACE_microDAGR']";
 force force tao_rewrite_main_mapIcon = true;
 force force tao_rewrite_main_mapTypeLocked = false;
 force force tao_rewrite_main_prefMap = false;
 force force tao_rewrite_main_refreshRate = 0;
-force force tao_rewrite_main_reposMap = true;
+force force tao_rewrite_main_requireGPSForGridRef = false;
+force force tao_rewrite_main_requireGPSForTablet = false;
+force force tao_rewrite_main_requireGPSmapIcon = false;
+force force tao_rewrite_main_requireMapForPaperMap = false;
 
 // Tier 1 Artillery Mod
 force force T1AM_AllowMapClick = true;
@@ -998,24 +1009,6 @@ force force uvo_main_UVOGuer = true;
 force force uvo_main_UVORU = true;
 force force uvo_main_UVOWest = true;
 force force uvo_main_voicePitch = 1;
-
-// USAF
-force force usaf_afterburner_setting_allow_ai = true;
-force force USAF_allowNuke = false;
-force force usaf_debug_setting_enabled_clients = false;
-force force usaf_debug_setting_enabled_server = false;
-force force usaf_serviceMenu_setting_allowHangarRearm = false;
-force force usaf_serviceMenu_setting_allowHangarRefuel = false;
-force force usaf_serviceMenu_setting_allowHangarRepair = false;
-force force usaf_serviceMenu_setting_allowLoadoutModification = true;
-force force usaf_serviceMenu_setting_enabled = false;
-force force usaf_serviceMenu_setting_refuelTime = "100";
-force force usaf_serviceMenu_setting_reloadTime = "0";
-force force usaf_serviceMenu_setting_repairTime = "100";
-force force usaf_serviceMenu_setting_replaceSources = false;
-force force usaf_serviceMenu_setting_selectorSearchRadius = "30";
-force force usaf_setting_allow_aiFormlights = true;
-force force usaf_utility_core_allow_move_in_cargo = false;
 
 // VET_Unflipping
 force force vet_unflipping_require_serviceVehicle = false;
